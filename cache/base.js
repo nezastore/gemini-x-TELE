@@ -7,7 +7,7 @@ const TELEGRAM_TOKEN = fs.readFileSync('TOKEN.txt', 'utf8').trim();
 const bot = new TelegramBot(TELEGRAM_TOKEN, { polling: true });
 
 // API Key untuk layanan generatif
-const API_KEY = "AIzaSyD5iQ8e5qJu72lGt71dpbJjyACTGattIdU";
+const API_KEY = "AIzaSyCpUqEollZGUJQcYDU35M3HdbyC1c07dYs";
 const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
 
 // Fungsi untuk mendapatkan respons dari API
@@ -79,7 +79,7 @@ bot.onText(/\/start/, (msg) => {
 
   const imageUrl = 'https://envs.sh/rI5.jpg';
   bot.sendPhoto(chatId, imageUrl, {
-    caption: 'Halo saya adalah NEZA-AI Pro , Saya siap membantu pekerjaan anda\n\n𝙎𝘾𝙍𝙄𝙋𝙏 𝘽𝙔 NezaFvnky 𝙤𝙧 NEZASTORE',
+    caption: 'Halo saya adalah NEZA-AI Pro , Saya berperan membantu pekerjaan anda\n\n𝙎𝘾𝙍𝙄𝙋𝙏 𝘽𝙔 NezaFvnky 𝙤𝙧 NEZASTORE',
     reply_markup: {
       inline_keyboard: [
         [{ text: 'Chanel Youtube', url: 'https://youtube.com/@NezaFvnky' }],
